@@ -20,8 +20,8 @@ main {
     margin-right: auto;
     height: auto;
     width: 75%;
-    border-style: solid;
-    border-width: 2px;
+    border-style: ridge;
+    border-width: 4px;
     border-radius: 20px 20px 20px 20px;
     text-align: center;
 }
