@@ -49,7 +49,6 @@ function randomNumberGenerator() {
 
     function negYear() {
         if (yearIntC < 0) {
-            alert(`Modifing year again`)
             yearIntC = yearIntC * -20;
             yearIntC = Math.round(yearIntC);
             console.log(yearIntC, "''third negative if' year'")
