@@ -5,6 +5,13 @@ h1 {
     text-shadow: .5px .5px #92fb04, -.5px -.5px #92fb04;
 }
 
+h2 {
+    text-align:  center;
+    color: #24ac24;
+    font-size: 30px;
+    text-shadow: .5px .5px #92fb04, -.5px -.5px #90fb04;
+}
+
 hr {
     color: #23ac23;
 }
