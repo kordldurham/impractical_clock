@@ -108,7 +108,7 @@ function randomNumberGenerator() {
     let datetimeDisplay = `Today's date and time:<br>${datetimeIntA}`;
     document.getElementById('datetime').innerHTML = datetimeDisplay;
 
-    alert(`Retrieving year`);
+    console.log(`Retrieving year`);
     yearIntB = parseInt(yearIntA) - Math.floor(Math.random() * 2200 + 1) - Math.floor(Math.random() * 1000 + 1);
     let yearDisplaya = `Year:<br>${yearIntA}`;
     document.getElementById('yeara').innerHTML = yearDisplaya;
@@ -136,19 +136,19 @@ function randomNumberGenerator() {
         document.getElementById('yeard').innerHTML = yearDisplayd;
     }
 
-    alert(`Retrieving month`);
+    console.log(`Retrieving month`);
     monthIntB = parseInt(monthIntA);
     console.log(monthIntB, "'month'");
     let monthDisplay = `Month<Br> ${monthIntB}`;
     document.getElementById('month').innerHTML = monthDisplay;
 
-    alert(`Retrieving day`)
+    console.log(`Retrieving day`)
     dayIntB = parseInt(dayIntA);
     console.log(dayIntB, "'day'");
     let dayDisplayb = `Day<br>${dayIntB}`;
     document.getElementById('day').innerHTML = dayDisplayb;
 
-    alert(`Retrieving hour`)
+    console.log(`Retrieving hour`)
     hourIntB = parseInt(hourIntA);
     console.log(hourIntB, "'hour'");
     let hourDisplaya = `Hour<Br>${hourIntA}`;
@@ -163,19 +163,19 @@ function randomNumberGenerator() {
         document.getElementById('hourb').innerHTML = hourDisplayb;
     }
 
-    alert(`Retrieving minutes`);
+    console.log(`Retrieving minutes`);
     minIntB = parseInt(minIntA);
     console.log(minIntB, "'minute'");
     let minDisplay = `Minute<br>${minIntB}`;
     document.getElementById('min').innerHTML = minDisplay;
 
-    alert(`Retrieving Seconds`)
+    console.log(`Retrieving Seconds`)
     secIntB = parseInt(secIntA);
     console.log(secIntB, "'seconds'");
     let secDisplayb = `Second<br>${secIntB}`;
     document.getElementById('sec').innerHTML = secDisplayb;
 
-    alert(`Retrieving milliseconds`)
+    console.log(`Retrieving milliseconds`)
     milliIntB = parseFloat(milliIntA);
     console.log(milliIntB, "'milliseconds'");
     let milliDisplaya = `Millisecond<br>${milliIntA}`;
@@ -205,7 +205,7 @@ function randomNumberGenerator() {
     console.log(ranInt, "'random number output'", lowInt, "'user low input'", highIntB, "'user high input'");
 
     if (lowInt > highIntB) {
-        alert(`Lowest number higher than highest number. Recalculating.`)
+        console.log(`Lowest number higher than highest number. Recalculating.`)
         randomNumberGenerator();
     }
 
@@ -214,7 +214,7 @@ function randomNumberGenerator() {
         let ranDisplay = `Random number: ${ranInt}`
         document.getElementById('ran').innerHTML = ranDisplay;
     } else {
-        alert(`Random number less than zero. Recalculating.`)
+        console.log(`Random number less than zero. Recalculating.`)
         randomNumberGenerator();
     }
 }
