@@ -210,7 +210,7 @@ function randomNumberGenerator() {
     }
 
     if (ranInt > lowInt) {
-        alert(`Calculating random number`)
+        console.log(`Calculating random number`)
         let ranDisplay = `Random number: ${ranInt}`
         document.getElementById('ran').innerHTML = ranDisplay;
     } else {
