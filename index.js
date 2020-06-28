@@ -219,7 +219,7 @@ function randomNumberGenerator() {
         let ranDisplay = `Random number: ${ranInt}`
         document.getElementById('ran').innerHTML = ranDisplay;
     } else {
-        alert(`Lowest number less than zero. Recalculating.`)
+        alert(`Random number less than zero. Recalculating.`)
         randomNumberGenerator();
     }
 }
