@@ -190,7 +190,7 @@ function randomNumberGenerator() {
     }
 
     lowInt = milliIntB + dayIntB + hourIntB;
-    let lMathDisplay = `${Math.round(milliIntB)}+${Math.round(dayIntB)}+${Math.round(hourIntB)}`;
+    let lMathDisplay = `${milliIntB}+${dayIntB}+${hourIntB}`;
     document.getElementById('lMath').innerHTML = lMathDisplay;
     let lowDisplay = `Lowest number: ${lowInt}`;
     document.getElementById('low').innerHTML = lowDisplay;
