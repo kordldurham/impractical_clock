@@ -2,6 +2,7 @@ h1 {
     text-align: center;
     color: #24ac24;
     font-size: 30px;
+    text-shadow: 5px 5px 5px 2.5px #32cd32;
 }
 
 hr {
@@ -12,6 +13,7 @@ body {
     background-color: #000;
     font-family: 'Abel', sans-serif;
     color: #111;
+    text-shadow: 5px 5px 5px 2.5px #32cd32;
 }
 
 main {
