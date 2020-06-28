@@ -99,7 +99,7 @@ function randomNumberGenerator() {
         zeroPlace = "0";
     }
 
-    let datetimeIntA = `${getMonth()}/${getDate()}/${getYear()}<br>${hourIntB}:${getMinute()}:${zeroPlace}${getSec()}${amPM}`;
+    let datetimeIntA = `${getMonth()}/${getDate()}/${getYear()}<br>${hourIntB}:${getMinute()}:${zeroPlace}${getSec()}.${getMilli()}${amPM}`;
 
     alert(`Retrieving todays date and time`);
     let datetimeDisplay = `Today's date and time:<br>${datetimeIntA}`;
