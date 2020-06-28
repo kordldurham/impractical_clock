@@ -104,10 +104,8 @@ function randomNumberGenerator() {
     if (minIntA < 10){
         minZero = "0";
     }
-
-    let twelvePH = "";
     
-    if (hourIntA == 0);{
+    if (hourIntB === 0);{
         hourIntB = "12";
     }
     let datetimeIntA = `${getMonth()}/${getDate()}/${getYear()}<br>${hourIntB}:${minZero}${getMinute()}:${zeroPlace}${getSec()}${amPM}`;
