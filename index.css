@@ -2,6 +2,7 @@ main {
     background-color: #000000;
     height: vh(100%);
     width: vw(100%);
+    margin: 0 25px 0 25px;
 }
 
 .backdiv {
