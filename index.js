@@ -157,6 +157,9 @@ function randomNumberGenerator() {
         console.log(hourIntB, "'converted hour'");
         let hourDisplayb = `Standard format:<br>${hourIntB} o'clock`;
         document.getElementById('hourb').innerHTML = hourDisplayb;
+    } else {
+        let hourDisplayb = `Standard format:<br>${hourIntB} o'clock`;
+        document.getElementById('hourb').innerHTML = hourDisplayb;
     }
 
     alert(`Retrieving minutes`);
