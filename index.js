@@ -176,10 +176,10 @@ function randomNumberGenerator() {
     document.getElementById('millia').innerHTML = milliDisplaya;
 
     if (milliIntB >= 100) {
-        milliIntB = milliIntB / 90;
+        milliIntB = milliIntB / 76;
         milliIntB = Math.round(milliIntB);
         console.log(milliIntB, "''after if' milliseconds'");
-        let milliDisplayb = `(millisecond total over 100) divide by 90:<br>${milliIntB}`;
+        let milliDisplayb = `(millisecond total over 100) divide by 76:<br>${milliIntB}`;
         document.getElementById('millib').innerHTML = milliDisplayb;
     }
 
