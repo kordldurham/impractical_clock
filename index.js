@@ -209,7 +209,7 @@ function randomNumberGenerator() {
         randomNumberGenerator();
     }
 
-    if (ranInt > 0) {
+    if (ranInt > lowInt) {
         alert(`Calculating random number`)
         let ranDisplay = `Random number: ${ranInt}`
         document.getElementById('ran').innerHTML = ranDisplay;
