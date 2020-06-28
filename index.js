@@ -189,8 +189,8 @@ function randomNumberGenerator() {
         document.getElementById('millib').innerHTML = milliDisplayb;
     }
 
-    lowInt = milliIntB + dayIntB + hourIntB;
-    let lMathDisplay = `${milliIntB}+${dayIntB}+${hourIntB}`;
+    lowInt = milliIntB + dayIntB - hourIntB;
+    let lMathDisplay = `${milliIntB}+${dayIntB}-${hourIntB}`;
     document.getElementById('lMath').innerHTML = lMathDisplay;
     let lowDisplay = `Lowest number: ${lowInt}`;
     document.getElementById('low').innerHTML = lowDisplay;
