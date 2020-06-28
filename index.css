@@ -19,7 +19,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    width: 75%;
+    width: 80%;
     border-style: ridge;
     border-width: 4px;
     border-radius: 20px 20px 20px 20px;
@@ -35,9 +35,9 @@ div {
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    width: 75%;
+    width: 60%;
     border-style: solid;
-    border-width: 2px;
+    border-width: 4px;
     border-radius: 20px 20px 20px 20px;
     text-align: center;
 }
