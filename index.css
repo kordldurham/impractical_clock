@@ -1,8 +1,8 @@
 h1 {
     text-align: center;
     color: #24ac24;
-    font-size: 40px;
-    text-shadow: 1px 2px #145214;
+    font-size: 46px;
+    text-shadow: 1px 1px #145214;
 }
 
 hr {
@@ -50,7 +50,7 @@ div {
     border-width: 4px;
     border-radius: 20px 20px 20px 20px;
     text-align: center;
-    text-shadow: 1px 2px #32CD32;
+    text-shadow: 1px 1px #32CD32;
 }
 
 .dta {
