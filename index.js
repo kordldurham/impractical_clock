@@ -102,7 +102,7 @@ function randomNumberGenerator() {
     let minZero = "";
     
     if (minIntA > 10){
-        min Zero = "0";
+        minZero = "0";
     }
 
     let twelvePH = "";
