@@ -110,20 +110,17 @@ function randomNumberGenerator() {
     yearIntB = parseInt(yearIntA) - Math.floor(Math.random() * 2200 + 1) - Math.floor(Math.random() * 1000 + 1);
     let yearDisplaya = `Year:<br>${yearIntA}`;
     document.getElementById('yeara').innerHTML = yearDisplaya;
-    alert('Adjusting year');
     console.log(yearIntA, "'before math year'", yearIntB, "'after math year'");
     let yearDisplayb = `(Year minus random number) - minus random number):<br>${yearIntB}`;
     document.getElementById('yearb').innerHTML = yearDisplayb;
 
     if (yearIntB >= 200) {
-        alert(`Modifying year`);
         yearIntB = yearIntB / 20;
         yearIntC = Math.round(yearIntB);
         console.log(yearIntC, "''positive if' year'");
         let yearDisplayc = `(Positive Year) divided by 20:<br>${yearIntC}`;
         document.getElementById('yearc').innerHTML = yearDisplayc;
     } else if (yearIntB < 0) {
-        alert(`Modifying year`);
         yearIntB = yearIntB / 20;
         yearIntC = Math.round(yearIntB);
         console.log(yearIntC, "''negative if' year'");
@@ -143,19 +140,16 @@ function randomNumberGenerator() {
     let monthDisplay = `Month<Br> ${monthIntB}`;
     document.getElementById('month').innerHTML = monthDisplay;
 
-    alert(`Retrieving day`)
     dayIntB = parseInt(dayIntA);
     console.log(dayIntB, "'day'");
     let dayDisplayb = `Day<br>${dayIntB}`;
     document.getElementById('day').innerHTML = dayDisplayb;
 
-    alert(`Retrieving hours`);
     hourIntB = parseInt(hourIntA);
     console.log(hourIntB, "'hour'");
     let hourDisplaya = `Hour<Br>${hourIntA}`;
     document.getElementById('houra').innerHTML = hourDisplaya;
     if (hourIntB > 12) {
-        alert(`Converting hours to standard format`)
         hourIntB = hourIntB - 12;
         console.log(hourIntB, "'converted hour'");
         let hourDisplayb = `Standard format:<br>${hourIntB} o'clock`;
@@ -168,20 +162,17 @@ function randomNumberGenerator() {
     let minDisplay = `Minute<br>${minIntB}`;
     document.getElementById('min').innerHTML = minDisplay;
 
-    alert(`Retrieving seconds`);
     secIntB = parseInt(secIntA);
     console.log(secIntB, "'seconds'");
     let secDisplayb = `Second<br>${secIntB}`;
     document.getElementById('sec').innerHTML = secDisplayb;
 
-    alert(`Retrieving milliseconds`);
     milliIntB = parseFloat(milliIntA);
     console.log(milliIntB, "'milliseconds'");
     let milliDisplaya = `Millisecond<br>${milliIntA}`;
     document.getElementById('millia').innerHTML = milliDisplaya;
 
     if (milliIntB >= 100) {
-        alert(`Modifying milliseconds`);
         milliIntB = milliIntB / 90;
         milliIntB = Math.round(milliIntB);
         console.log(milliIntB, "''after if' milliseconds'");
@@ -190,7 +181,6 @@ function randomNumberGenerator() {
     }
 
     lowInt = milliIntB + dayIntB + hourIntB;
-    alert(`Calculating lowest number`)
     let lMathDisplay = `${Math.round(milliIntB)}+${Math.round(dayIntB)}+${Math.round(hourIntB)}`;
     document.getElementById('lMath').innerHTML = lMathDisplay;
     let lowDisplay = `Lowest number: ${lowInt}`;
@@ -198,7 +188,6 @@ function randomNumberGenerator() {
     let highIntA;
     highIntA = yearIntB + yearIntC + monthIntB - minIntB;
     let highIntB = Math.round(highIntA);
-    alert(`Calculating highest number`)
     let hMathDisplay = `${Math.round(yearIntB)}+${Math.round(yearIntC)}+${Math.round(monthIntB)}+${Math.round(minIntB)}`;
     document.getElementById('hMath').innerHTML = hMathDisplay;
     let highDisplay = `Highest number: ${highIntB}`;
