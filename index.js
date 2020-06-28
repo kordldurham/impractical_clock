@@ -162,9 +162,6 @@ function randomNumberGenerator() {
         let hourDisplayb = `Standard format:<br>${hourIntB} o'clock`;
         document.getElementById('hourb').innerHTML = hourDisplayb;
     }
-    if (hourIntA === 0);{
-        hourIntB = "12";
-    }
 
     alert(`Retrieving minutes`);
     minIntB = parseInt(minIntA);
