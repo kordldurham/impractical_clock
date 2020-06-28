@@ -3,14 +3,10 @@ h1 {
     color: #24ac24;
     font-size: 50px;
     text-shadow: .5px .5px #92fb04, -.5px -.5px #92fb04;
-    border-style: ridge;
-    border-color: #1C751C;
-    border-width: 5px;
 }
 
 hr {
     color: #23ac23;
-    font-size: 8px;
 }
 
 body {
@@ -18,7 +14,7 @@ body {
     font-family: 'Abel', sans-serif;
     color: #111;
     border-style: ridge;
-    border-color: #0a0a0a;
+    border-color: #1C751C;
     border-width: 5px;
 }
 
