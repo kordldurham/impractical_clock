@@ -1,0 +1,130 @@
+main {
+    background-color: #000000;
+}
+
+.backdiv {
+    background-color: #111111;
+    color: rgb(36, 148, 36);
+    border-radius: 20px 20px 20px 20px;
+    padding: 5px 2.5px 2.5px 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 75%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+div {
+    background-color: #222;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    padding: 5px 2.5px 2.5px 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 75%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.dta {
+    color: limegreen;
+    font-size: 28px;
+}
+
+.ya {
+    color: limegreen;
+    font-size: 28px;
+}
+
+.yb {
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+.yc {
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+.yd {
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+.ma {
+    color: limegreen;
+    font-size: 28px;
+}
+
+.mb {
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+.da {
+    color: limegreen;
+    font-size: 28px;
+}
+
+.ha {
+    color: limegreen;
+    font-size: 28px;
+}
+
+.hb {
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+.ma {
+    color: limegreen;
+    font-size: 28px;
+}
+
+.sa {
+    color: limegreen;
+    font-size: 28px;
+}
+
+.mia {
+    color: limegreen;
+    font-size: 28px;
+}
+
+.mib {
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+.la {
+    color: darkslategray;
+    font-size: 24px;
+}
+
+.lm {
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+.hia {
+    color: darkslategray;
+    font-size: 24px;
+}
+
+.hm {
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+.ra {
+    color: limegreen;
+    font-size: 28px;
+}
