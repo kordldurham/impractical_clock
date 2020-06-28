@@ -2,7 +2,7 @@ h1 {
     text-align: center;
     color: #24ac24;
     font-size: 40px;
-    text-shadow: 2px 2px #28A428;
+    text-shadow: 2px 2px #145214;
 }
 
 hr {
@@ -13,7 +13,7 @@ body {
     background-color: #000;
     font-family: 'Abel', sans-serif;
     color: #111;
-    text-shadow: 2px 2px #32CD32;
+    text-shadow: 2px 2px #238F23;
 }
 
 main {
@@ -52,7 +52,7 @@ div {
     border-width: 4px;
     border-radius: 20px 20px 20px 20px;
     text-align: center;
-    text-shadow: 2px 2px #082008;
+    text-shadow: 2px 2px #32CD32;
 }
 
 .dta {
