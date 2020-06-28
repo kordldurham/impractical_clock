@@ -1,5 +1,7 @@
 main {
     background-color: #000000;
+    height: 150%;
+    width: 150%;
 }
 
 .backdiv {
