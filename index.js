@@ -86,7 +86,7 @@ function randomNumberGenerator() {
     }
 
     let amPM;
-    if (hourIntB < 12) {
+    if (hourIntA < 12) {
         amPM = " AM"
     } else {
         amPM = " PM"
@@ -104,7 +104,7 @@ function randomNumberGenerator() {
     
     let datetimeIntA = `${getMonth()}/${getDate()}/${getYear()}<br>${hourIntB}:${minZero}${getMinute()}:${zeroPlace}${getSec()}${amPM}`;
 
-    alert(`Retrieving todays date and time`);
+    console.log(`Retrieving todays date and time`);
     let datetimeDisplay = `Today's date and time:<br>${datetimeIntA}`;
     document.getElementById('datetime').innerHTML = datetimeDisplay;
 
