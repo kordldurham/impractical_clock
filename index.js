@@ -189,13 +189,13 @@ function randomNumberGenerator() {
         document.getElementById('millib').innerHTML = milliDisplayb;
     }
 
-    lowInt = milliIntB + dayIntB - hourIntB;
+    lowInt = milliIntB + dayIntB - hourIntB - monthIntB;
     let lMathDisplay = `${milliIntB}+${dayIntB}-${hourIntB}`;
     document.getElementById('lMath').innerHTML = lMathDisplay;
     let lowDisplay = `Lowest number: ${lowInt}`;
     document.getElementById('low').innerHTML = lowDisplay;
     let highIntA;
-    highIntA = yearIntB + yearIntC + monthIntB + minIntB;
+    highIntA = yearIntB + yearIntC + minIntB;
     let highIntB = Math.round(highIntA);
     let hMathDisplay = `${Math.round(yearIntB)}+${Math.round(yearIntC)}+${Math.round(monthIntB)}+${Math.round(minIntB)}`;
     document.getElementById('hMath').innerHTML = hMathDisplay;
