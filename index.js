@@ -87,7 +87,7 @@ function randomNumberGenerator() {
 
     let amPM;
 
-    if (hourIntB > 12) {
+    if (hourIntB < 12) {
         amPM = " AM"
     } else {
         amPM = " PM"
@@ -95,7 +95,7 @@ function randomNumberGenerator() {
 
     let zeroPlace = "";
 
-    if (secIntA > 10) {
+    if (secIntA < 10) {
         zeroPlace = "0";
     }
     
