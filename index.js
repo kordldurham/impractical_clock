@@ -105,9 +105,6 @@ function randomNumberGenerator() {
         minZero = "0";
     }
     
-    if (hourIntA === 0);{
-        hourIntB = "12";
-    }
     let datetimeIntA = `${getMonth()}/${getDate()}/${getYear()}<br>${hourIntB}:${minZero}${getMinute()}:${zeroPlace}${getSec()}${amPM}`;
 
     alert(`Retrieving todays date and time`);
@@ -164,6 +161,9 @@ function randomNumberGenerator() {
         console.log(hourIntB, "'converted hour'");
         let hourDisplayb = `Standard format:<br>${hourIntB} o'clock`;
         document.getElementById('hourb').innerHTML = hourDisplayb;
+    }
+    if (hourIntA === 0);{
+        hourIntB = "12";
     }
 
     alert(`Retrieving minutes`);
