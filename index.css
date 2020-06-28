@@ -14,6 +14,9 @@ body {
     background-color: #000;
     font-family: 'Abel', sans-serif;
     color: #111;
+    border-style: ridge;
+    border-color: #0a0a0a;
+    border-width: 5px;
 }
 
 main {
@@ -33,7 +36,7 @@ main {
     height: auto;
     width: 75%;
     border-style: ridge;
-    border-width: 4px;
+    border-width: 5px;
     border-radius: 20px 20px 20px 20px;
     text-align: center;
 }
@@ -48,7 +51,7 @@ div {
     height: auto;
     width: 75%;
     border-style: solid;
-    border-width: 4px;
+    border-width: 5px;
     border-radius: 20px 20px 20px 20px;
     text-align: center;
     text-shadow: 1px 1px #1C751C, -1px -1px #1C751C;
