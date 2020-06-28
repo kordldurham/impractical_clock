@@ -197,7 +197,7 @@ function randomNumberGenerator() {
     let highIntA;
     highIntA = yearIntB + yearIntC + minIntB;
     let highIntB = Math.round(highIntA);
-    let hMathDisplay = `${Math.round(yearIntB)}+${Math.round(yearIntC)}+${Math.round(monthIntB)}+${Math.round(minIntB)}`;
+    let hMathDisplay = `${Math.round(yearIntB)}+${Math.round(yearIntC)}+${Math.round(minIntB)}`;
     document.getElementById('hMath').innerHTML = hMathDisplay;
     let highDisplay = `Highest number: ${highIntB}`;
     document.getElementById('high').innerHTML = highDisplay;
