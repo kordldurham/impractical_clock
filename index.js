@@ -140,11 +140,13 @@ function randomNumberGenerator() {
     let monthDisplay = `Month<Br> ${monthIntB}`;
     document.getElementById('month').innerHTML = monthDisplay;
 
+    alert(`Retrieving day`)
     dayIntB = parseInt(dayIntA);
     console.log(dayIntB, "'day'");
     let dayDisplayb = `Day<br>${dayIntB}`;
     document.getElementById('day').innerHTML = dayDisplayb;
 
+    alert(`Retrieving hour`)
     hourIntB = parseInt(hourIntA);
     console.log(hourIntB, "'hour'");
     let hourDisplaya = `Hour<Br>${hourIntA}`;
@@ -162,11 +164,13 @@ function randomNumberGenerator() {
     let minDisplay = `Minute<br>${minIntB}`;
     document.getElementById('min').innerHTML = minDisplay;
 
+    alert(`Retrieving Seconds`)
     secIntB = parseInt(secIntA);
     console.log(secIntB, "'seconds'");
     let secDisplayb = `Second<br>${secIntB}`;
     document.getElementById('sec').innerHTML = secDisplayb;
 
+    alert(`Retrieving milliseconds`)
     milliIntB = parseFloat(milliIntA);
     console.log(milliIntB, "'milliseconds'");
     let milliDisplaya = `Millisecond<br>${milliIntA}`;
