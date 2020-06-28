@@ -80,6 +80,10 @@ function randomNumberGenerator() {
     let monthIntB;
     const monthIntA = getMonth();
 
+    if(hourIntB > 12){
+       hourIntB = hourIntB - 12;
+}
+
     let amPM;
     if (hourIntB < 12) {
         amPM = " AM"
