@@ -201,7 +201,7 @@ function randomNumberGenerator() {
     document.getElementById('hMath').innerHTML = hMathDisplay;
     let highDisplay = `Highest number: ${highIntB}`;
     document.getElementById('high').innerHTML = highDisplay;
-    ranInt = Math.floor(Math.random() * (highIntB - lowInt + 1)) - lowInt;
+    ranInt = Math.floor(Math.random() * (highIntB - lowInt + 1)) - lowInt);
     console.log(ranInt, "'random number output'", lowInt, "'user low input'", highIntB, "'user high input'");
 
     if (lowInt > highIntB) {
