@@ -82,7 +82,7 @@ function randomNumberGenerator() {
 
     if(hourIntB > 12){
        hourIntB = hourIntB - 12;
-}
+    }
 
     let amPM;
     if (hourIntB < 12) {
