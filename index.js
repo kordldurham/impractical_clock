@@ -107,7 +107,7 @@ function randomNumberGenerator() {
 
     let twelvePH = "";
     
-    if (hourIntA === 0);{
+    if (hourIntA == 0);{
         hourIntB = "12";
     }
     let datetimeIntA = `${getMonth()}/${getDate()}/${getYear()}<br>${hourIntB}:${minZero}${getMinute()}:${zeroPlace}${getSec()}${amPM}`;
