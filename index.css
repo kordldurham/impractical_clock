@@ -2,7 +2,7 @@ h1 {
     text-align: center;
     color: #24ac24;
     font-size: 50px;
-    text-shadow: .75px .75px #1C751C, -.75px -.75px #1C751C;
+    text-shadow: 1px 1px #1C751C, -1px -1px #1C751C;
 }
 
 hr {
@@ -51,138 +51,138 @@ div {
     border-width: 4px;
     border-radius: 20px 20px 20px 20px;
     text-align: center;
-    text-shadow: .75px .75px #1C751C, -.75px -.75px #1C751C;
+    text-shadow: 1px 1px #1C751C, -1px -1px #1C751C;
 }
 
 .dta {
     color: limegreen;
     font-size: 28px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .ya {
     color: limegreen;
     font-size: 28px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .yb {
     color: darkslategrey;
     font-size: 18px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .yc {
     color: darkslategrey;
     font-size: 18px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .yd {
     color: darkslategrey;
     font-size: 18px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .ma {
     color: limegreen;
     font-size: 28px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .mb {
     color: darkslategrey;
     font-size: 18px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .da {
     color: limegreen;
     font-size: 28px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .ha {
     color: limegreen;
     font-size: 28px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .hb {
     color: darkslategrey;
     font-size: 24px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .ma {
     color: limegreen;
     font-size: 28px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .sa {
     color: limegreen;
     font-size: 28px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .mia {
     color: limegreen;
     font-size: 28px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .mib {
     color: darkslategrey;
     font-size: 18px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .la {
     color: darkslategray;
     font-size: 24px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .lm {
     color: darkslategrey;
     font-size: 18px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .hia {
     color: darkslategray;
     font-size: 24px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .hm {
     color: darkslategrey;
     font-size: 18px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
 
 .ra {
     color: limegreen;
     font-size: 28px;
-    box-shadow: 5px 5px 2.5px #333;
+    box-shadow: 5px 5px 2.5px #222;
     padding: 2.5px 0 2.5px 0;
 }
