@@ -99,12 +99,18 @@ function randomNumberGenerator() {
         zeroPlace = "0";
     }
     
+    let minZero = "";
+    
+    if (minIntA > 10){
+        min Zero = "0";
+    }
+
     let twelvePH = "";
     
     if (hourIntA === 0);{
         hourIntB = "12";
     }
-    let datetimeIntA = `${getMonth()}/${getDate()}/${getYear()}<br>${hourIntB}:${getMinute()}:${zeroPlace}${getSec()}${amPM}`;
+    let datetimeIntA = `${getMonth()}/${getDate()}/${getYear()}<br>${hourIntB}:${minZero}${getMinute()}:${zeroPlace}${getSec()}${amPM}`;
 
     alert(`Retrieving todays date and time`);
     let datetimeDisplay = `Today's date and time:<br>${datetimeIntA}`;
