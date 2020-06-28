@@ -37,6 +37,7 @@ main {
     border-style: ridge;
     border-width: 5px;
     border-radius: 20px 20px 20px 20px;
+    border-color: #111
     text-align: center;
 }
 
