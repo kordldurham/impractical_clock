@@ -1,7 +1,6 @@
 body {
     background-color: #000;
     font-family: 'Abel', sans-serif;
-    text-shadow: 5px 5px 5px 2.5px limegreen;
 }
 
 main {
@@ -41,6 +40,7 @@ div {
     border-width: 4px;
     border-radius: 20px 20px 20px 20px;
     text-align: center;
+    text-shadow: 5px 5px 5px 2.5px limegreen;
 }
 
 .dta {
