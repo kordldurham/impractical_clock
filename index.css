@@ -39,7 +39,6 @@ div {
     border-width: 2px;
     border-radius: 20px 20px 20px 20px;
     text-align: center;
-    box-shadow: 5px 5px 2.5px #333;
 }
 
 .dta {
@@ -93,7 +92,8 @@ div {
 .ha {
     color: limegreen;
     font-size: 28px;
-    box-shadow: 5px 5px 2.5px #333;}
+    box-shadow: 5px 5px 2.5px #333;
+}
 
 .hb {
     color: darkslategrey;
@@ -104,7 +104,8 @@ div {
 .ma {
     color: limegreen;
     font-size: 28px;
-    box-shadow: 5px 5px 2.5px #333;}
+    box-shadow: 5px 5px 2.5px #333;
+}
 
 .sa {
     color: limegreen;
@@ -139,7 +140,8 @@ div {
 .hia {
     color: darkslategray;
     font-size: 24px;
-    box-shadow: 5px 5px 2.5px #333;}
+    box-shadow: 5px 5px 2.5px #333;
+}
 
 .hm {
     color: darkslategrey;
