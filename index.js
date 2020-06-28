@@ -95,7 +95,7 @@ function randomNumberGenerator() {
 
     let zeroPlace = "";
 
-    if (secIntA < 10) {
+    if (secIntA > 10) {
         zeroPlace = "0";
     }
     
