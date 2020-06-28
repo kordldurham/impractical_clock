@@ -98,7 +98,12 @@ function randomNumberGenerator() {
     if (secIntA < 10) {
         zeroPlace = "0";
     }
-
+    
+    let twelvePH = "";
+    
+    if (hourIntA === 0);{
+        hourIntB = "12";
+    }
     let datetimeIntA = `${getMonth()}/${getDate()}/${getYear()}<br>${hourIntB}:${getMinute()}:${zeroPlace}${getSec()}${amPM}`;
 
     alert(`Retrieving todays date and time`);
