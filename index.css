@@ -1,7 +1,11 @@
+h1 {
+    text-align: center;
+}
+
 body {
     background-color: #000;
     font-family: 'Abel', sans-serif;
-    color: #3aef3a;
+    color: #28A428;
 }
 
 main {
