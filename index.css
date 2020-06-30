@@ -6,6 +6,25 @@ body {
     font-weight: 200;
 }
 
+#footerbox {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96.74%;
+    padding: 20px;
+    border-top-style: ridge;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-color: #7efd00;
+}
+
+footer {
+    color: lawngreen;
+    align-self: flex-start;
+    font-family: monospace;
+}
+
 h1,
 h2 {
     color: #7efd00;
@@ -45,7 +64,7 @@ div {
 
 .backdiv,
 div {
-    flex: 2;
+    flex: 2 0 100px;
     border-style: outset;
     border-width: 5px;
     border-radius: 1px 1px 1px 1px;
