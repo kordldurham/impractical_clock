@@ -304,6 +304,6 @@ button:hover {
         box-shadow: 3px 3px 3px #a0a0a0;
     }
     .footerbox {
-        padding-bottom: 30vh;
+        margin-bottom: 25%;
     }
 }
