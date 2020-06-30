@@ -102,7 +102,7 @@ function randomNumberGenerator() {
         minZero = "0";
     }
 
-    let datetimeIntA = `${getMonth()}/${getDate()}/${getYear()}<br>${hourIntB}:${minZero}${getMinute()}:${zeroPlace}${getSec()}${amPM}`;
+    let datetimeIntA = `<br>${getMonth()}/${getDate()}/${getYear()}<br>${hourIntB}:${minZero}${getMinute()}:${zeroPlace}${getSec()}${amPM}<br>`;
 
     console.log(`Retrieving todays date and time`);
     let datetimeDisplay = `${datetimeIntA}`;
@@ -110,7 +110,7 @@ function randomNumberGenerator() {
 
     console.log(`Retrieving year`);
     yearIntB = parseInt(yearIntA) - Math.floor(Math.random() * 2200 + 1) - Math.floor(Math.random() * 1000 + 1);
-    let yearDisplaya = `Year:<br>${yearIntA}`;
+    let yearDisplaya = `Year<br>${yearIntA}`;
     document.getElementById('yeara').innerHTML = yearDisplaya;
     console.log(yearIntA, "'before math year'", yearIntB, "'after math year'");
     let yearDisplayb = `(Year minus random number) - minus random number):<br>${yearIntB}`;
