@@ -81,8 +81,8 @@ function randomNumberGenerator() {
     const monthIntA = getMonth();
 
     hourIntB = parseInt(hourIntA);
-    if(hourIntB > 12){
-       hourIntB = hourIntB - 12;
+    if (hourIntB > 12) {
+        hourIntB = hourIntB - 12;
     }
 
     let amPM;
@@ -96,16 +96,16 @@ function randomNumberGenerator() {
     if (secIntA < 10) {
         zeroPlace = "0";
     }
-    
+
     let minZero = "";
-    if (minIntA < 10){
+    if (minIntA < 10) {
         minZero = "0";
     }
-    
+
     let datetimeIntA = `${getMonth()}/${getDate()}/${getYear()}<br>${hourIntB}:${minZero}${getMinute()}:${zeroPlace}${getSec()}${amPM}`;
 
     console.log(`Retrieving todays date and time`);
-    let datetimeDisplay = `Today's date and time:<br>${datetimeIntA}`;
+    let datetimeDisplay = `${datetimeIntA}`;
     document.getElementById('datetime').innerHTML = datetimeDisplay;
 
     console.log(`Retrieving year`);

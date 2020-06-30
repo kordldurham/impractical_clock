@@ -1,65 +1,118 @@
 main,
 body {
     background-color: #000000;
+    height: 90vw;
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+h1,
+h2 {
+    color: #7efd00;
+    text-align: center;
+}
+
+h1,
+h2,
+.biggreen {
+    text-shadow: 1px 1px #207000, 2px 2px #007020, 3px 3px #010101;
+}
+
+.medgrey,
+.litgrey {
+    text-shadow: 1px 1px #002070, 2px 2px #702000, 3px 3px #010101;
 }
 
 .backdiv {
-    background-color: #111111;
-    color: rgb(36, 148, 36);
-    border-radius: 20px 20px 20px 20px;
-    padding: 5px 2.5px 2.5px 5px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    width: 75%;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px 20px 20px 20px;
-    text-align: center;
+    background-color: #111111;
+    color: #333;
+    width: 75vw;
+}
+
+.item {
+    height: 2rem;
+    width: 10rem;
+    text-decoration: none;
 }
 
 div {
     background-color: #222;
-    color: white;
-    border-radius: 20px 20px 20px 20px;
-    padding: 5px 2.5px 2.5px 5px;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
     width: 75%;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px 20px 20px 20px;
+}
+
+.backdiv,
+div {
+    flex: 2;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 1px 1px 1px 1px;
     text-align: center;
 }
 
-.dta,
-.ya,
-.ma,
-.da,
-.ha,
-.sa,
-.mia,
-.ra {
-    color: limegreen;
-    font-size: 28px;
+body,
+.backdiv,
+div {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
 }
 
-.yb,
-.yc,
-.yd,
-.mb,
-.hb,
-.mib,
-.lm,
-.hm {
-    color: darkslategrey;
-    font-size: 18px;
-}
-
-.la,
-.hia {
-    color: darkslategray;
+.biggreen {
+    color: #7efd00;
     font-size: 24px;
+    flex: 3 25px;
+    font-weight: 600;
+}
+
+.medgrey {
+    color: #838383;
+    font-size: 20px;
+    flex: 2 25px;
+    font-weight: 400;
+}
+
+.litgrey {
+    color: #838383;
+    font-size: 10px;
+    flex: 1 25px;
+    font-weight: 200;
+}
+
+.biggreen {
+    box-shadow: 5px 5px 5px #80ff00;
+    align-self: center;
+    margin: 10px 0 10px 0;
+}
+
+.medgrey,
+.litgrey {
+    box-shadow: 5px 5px 5px #a0a0a0;
+    align-self: center;
+    margin: 10px 0 10px 0;
+}
+
+@media (max-width: 480px) {
+    .backdiv,
+    div {
+        flex: 1 75vw;
+    }
+    .biggreen {
+        font-size: 20px;
+        flex: 3 75px;
+        box-shadow: 3px 3px 3px #80ff00;
+    }
+    .medgrey {
+        font-size: 16px;
+        flex: 2 50px;
+        box-shadow: 3px 3px 3px #a0a0a0;
+    }
+    .ligrey {
+        font-size: 8px;
+        flex: 1 25px;
+        box-shadow: 3px 3px 3px #a0a0a0;
+    }
 }
