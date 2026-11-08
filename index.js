@@ -33,8 +33,8 @@ function randomNumberGenerator(now = new Date(), random = Math.random) {
 
     show('yeara', 'Year:', year);
     show('yearb', '(Year minus random number) minus random number:', subtractedYear);
-    show('yearc', 'Year divided by 20 (rounded; null when not applied):', divideYear ? roundedYear : null);
-    show('yeard', 'Negative result times -10 (null when not applied):', roundedYear < 0 ? adjustedYear : null);
+    show('yearc', 'Year ÷ 20 (rounded):', divideYear ? roundedYear : null);
+    show('yeard', 'Negative result × -10:', roundedYear < 0 ? adjustedYear : null);
     show('month', 'Month', month);
     show('day', 'Day', day);
     show('houra', 'Hour', hour);

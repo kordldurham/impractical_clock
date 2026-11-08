@@ -359,3 +359,10 @@ h2 { font-size: clamp(.65rem, 1.5vw, 1rem); line-height: 1.8; padding: 0 1rem; }
     .dropdown .dropbtn { font-size: .65rem; }
     .biggreen { font-size: 1rem; }
 }
+
+/* Reserve these calculation panels even while values are absent or updating. */
+#yearc, #yeard {
+    display: block !important;
+    flex: none;
+    min-height: calc(4.8em + 20px);
+}
