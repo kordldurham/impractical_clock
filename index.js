@@ -18,7 +18,7 @@ function randomNumberGenerator(now = new Date(), random = Math.random) {
             if (index) element.append(document.createElement('br'));
             element.append(document.createTextNode(String(line)));
         });
-        element.hidden = lines.length === 0;
+        element.hidden = false;
     };
 
     show('datetime', `${month}/${day}/${year}`,
@@ -33,8 +33,8 @@ function randomNumberGenerator(now = new Date(), random = Math.random) {
 
     show('yeara', 'Year:', year);
     show('yearb', '(Year minus random number) minus random number:', subtractedYear);
-    show('yearc', ...(divideYear ? ['Year divided by 20 (rounded):', roundedYear] : []));
-    show('yeard', ...(roundedYear < 0 ? ['Negative result times -10:', adjustedYear] : []));
+    show('yearc', 'Year divided by 20 (rounded; null when not applied):', divideYear ? roundedYear : null);
+    show('yeard', 'Negative result times -10 (null when not applied):', roundedYear < 0 ? adjustedYear : null);
     show('month', 'Month', month);
     show('day', 'Day', day);
     show('houra', 'Hour', hour);
@@ -42,7 +42,7 @@ function randomNumberGenerator(now = new Date(), random = Math.random) {
     show('min', 'Minute', minute);
     show('sec', 'Second', second);
     show('millia', 'Millisecond', millisecond);
-    show('millib', ...(millisecond >= 100 ? ['Milliseconds ≥ 100 divided by 60 (rounded):', workingMilli] : []));
+    show('millib', 'Milliseconds ≥ 100 divided by 60 (rounded; null when not applied):', millisecond >= 100 ? workingMilli : null);
 
     const firstBound = workingMilli + day - standardHour - month;
     const secondBound = Math.round(workingYear + adjustedYear + minute);
