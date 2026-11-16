@@ -5,10 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script>      
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="index.css?v=stable-panels-2">
+<link rel="stylesheet" href="index.css?v=quick-links-1">
 <title>The World's Most Impractical Clock</title>
 </head>
 <body>
+<aside id="quick-links-drawer" class="quick-links-drawer" aria-label="Quick links">
+  <nav id="quick-links-panel" class="quick-links-panel" aria-label="Quick links" aria-hidden="true" inert>
+    <div class="quick-links-heading">QUICK LINKS</div>
+    <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-robot" aria-hidden="true"></i> ChatGPT</a>
+    <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-google" aria-hidden="true"></i> Google</a>
+    <a href="https://github.com/kordldurham/Auspex" target="_blank" rel="noopener noreferrer"><i class="fas fa-chess-knight" aria-hidden="true"></i> Auspex</a>
+    <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i> Gmail</a>
+  </nav>
+  <button id="quick-links-toggle" class="quick-links-toggle" type="button" aria-controls="quick-links-panel" aria-expanded="false" aria-label="Open quick links">
+    <span aria-hidden="true">LINKS</span>
+  </button>
+</aside>
   <div id="navbar" class="topnav">
     <div class="dropdown">
     <button id="projects" class="dropbtn"><i class="fas fa-project-diagram"></i>  Projects<i class="fa fa-caret-down"></i></button>
@@ -74,6 +86,6 @@
 </div>
 </aside>
 </main>
-<script src="index.js?v=stable-panels-2"></script>
+<script src="index.js?v=quick-links-1"></script>
 </body>
 </html>
