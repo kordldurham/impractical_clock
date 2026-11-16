@@ -51,15 +51,23 @@ function generateRandomNumber(now = new Date(), random = Math.random) {
     const minute = now.getMinutes();
     const millisecond = now.getMilliseconds();
     const weekday = weekdayInfo(now);
-    const subtractedYear = year - Math.floor(random() * 2200 + 1) - Math.floor(random() * 1000 + 1);
+    const firstYearSubtraction = Math.floor(random() * 2200 + 1);
+    const secondYearSubtraction = Math.floor(random() * 1000 + 1);
+    const subtractedYear = year - firstYearSubtraction - secondYearSubtraction;
     const divideYear = subtractedYear >= 200 || subtractedYear < 0;
     const workingYear = divideYear ? subtractedYear / 20 : subtractedYear;
     const roundedYear = divideYear ? Math.round(workingYear) : 0;
     const adjustedYear = roundedYear < 0 ? roundedYear * -10 : roundedYear;
     const workingMilli = millisecond >= 100 ? Math.round(millisecond / 60) : millisecond;
 
-    showClockValue('yearb', '(Year minus random number) minus random number:', subtractedYear);
-    showClockValue('yearc', 'Year ÷ 20 (rounded):', divideYear ? roundedYear : null);
+    showClockValue('yearb', 'Year minus two random numbers:',
+        `${year} − ${firstYearSubtraction} − ${secondYearSubtraction} = ${subtractedYear}`);
+    showClockValue('yearc', divideYear
+        ? 'Adjusted year ÷ 20 (rounded):'
+        : 'Adjusted year ÷ 20 (not applied for values 0–199):',
+        divideYear
+            ? `(${year} − ${firstYearSubtraction} − ${secondYearSubtraction}) ÷ 20 = ${(subtractedYear / 20).toFixed(2)} → ${roundedYear}`
+            : `${subtractedYear} (division skipped)`);
     showClockValue('yeard', 'Negative result × -10:', roundedYear < 0 ? adjustedYear : null);
     showClockValue('millib', 'Milliseconds ≥ 100 divided by 60 (rounded; null when not applied):',
         millisecond >= 100 ? workingMilli : null);
