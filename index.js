@@ -86,3 +86,58 @@ document.addEventListener('pointerdown', event => {
         setQuickLinksOpen(false);
     }
 });
+
+/* Show the existing frog website over the clock on local Wednesdays only.
+   FormSubmit redirects successful submissions to ?wednesday=complete.
+   The completion marker lasts until the viewer's next local Wednesday. */
+const wednesdayGate = document.getElementById('wednesday-gate');
+const wednesdayFrame = document.getElementById('wednesday-gate-frame');
+const WEDNESDAY_PAGE = 'https://kordldurham.github.io/SparkyArcingPotato/';
+const WEDNESDAY_COMPLETE_KEY = 'wednesday-form-completed';
+let wednesdayGateVisible = false;
+
+function localDayStamp(date = new Date()) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+function syncWednesdayGate() {
+    const isWednesday = new Date().getDay() === 3;
+    let completedToday = false;
+    try {
+        completedToday = sessionStorage.getItem(WEDNESDAY_COMPLETE_KEY) === localDayStamp();
+    } catch (_) {
+        // Storage may be disabled; the URL redirect still dismisses the gate.
+    }
+
+    const shouldShow = isWednesday && !completedToday;
+    if (shouldShow === wednesdayGateVisible) return;
+
+    wednesdayGateVisible = shouldShow;
+    wednesdayGate.hidden = !shouldShow;
+    document.body.classList.toggle('wednesday-gated', shouldShow);
+    if (shouldShow) {
+        wednesdayFrame.src = WEDNESDAY_PAGE;
+    } else {
+        wednesdayFrame.removeAttribute('src');
+    }
+}
+
+const wednesdayParams = new URLSearchParams(window.location.search);
+if (wednesdayParams.get('wednesday') === 'complete') {
+    try {
+        sessionStorage.setItem(WEDNESDAY_COMPLETE_KEY, localDayStamp());
+    } catch (_) { /* Private browsing can block storage. */ }
+    // Hide the overlay even if storage is unavailable, on this landing page.
+    if (new Date().getDay() === 3) {
+        wednesdayGateVisible = false;
+    }
+    wednesdayParams.delete('wednesday');
+    const cleanQuery = wednesdayParams.toString();
+    history.replaceState(null, '', window.location.pathname +
+        (cleanQuery ? '?' + cleanQuery : '') + window.location.hash);
+}
+syncWednesdayGate();
+setInterval(syncWednesdayGate, 60000);
