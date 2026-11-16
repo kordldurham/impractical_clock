@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script>      
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="index.css?v=wednesday-gate-1">
+<link rel="stylesheet" href="index.css?v=weekday-roll-1">
 <title>The World's Most Impractical Clock</title>
 </head>
 <body>
@@ -64,6 +64,10 @@
 <div class="backdiv">
 <div class="biggreen" id="day"></div>
 </div>
+<div class="backdiv" id="weekday">
+    <div class="biggreen" id="weekdayName"></div>
+    <div class="litgrey" id="weekdayMultiplier"></div>
+</div>
 <div class="backdiv" id="hour">
     <div class="biggreen" id="houra"></div>
     <div class="litgrey" id="hourb"></div>
@@ -83,7 +87,8 @@
     <div class="medgrey" id="low"></div>
     <div class="litgrey" id="hMath"></div>
     <div class="medgrey" id="high"></div>
-    <div class="biggreen" id="ran"></div>
+    <div class="biggreen" id="ran" aria-live="polite">Press GENERATE to roll.</div>
+    <button id="generate-random" class="generate-random" type="button">GENERATE RANDOM NUMBER</button>
 </div>
 <aside>
 <div id="footerbox">
@@ -91,6 +96,6 @@
 </div>
 </aside>
 </main>
-<script src="index.js?v=wednesday-gate-1"></script>
+<script src="index.js?v=weekday-roll-1"></script>
 </body>
 </html>

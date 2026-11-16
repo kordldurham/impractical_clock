@@ -502,3 +502,22 @@ h2 { font-size: clamp(.65rem, 1.5vw, 1rem); line-height: 1.8; padding: 0 1rem; }
     background: #fffcb5;
 }
 body.wednesday-gated { overflow: hidden; }
+
+/* Manual reroll button fits the existing retro green-on-black clock. */
+.generate-random {
+    display: block;
+    width: min(75%, 32rem);
+    margin: 12px auto 20px;
+    padding: 15px 12px;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    font-size: clamp(.62rem, 1.5vw, .85rem);
+    line-height: 1.7;
+    color: #7efd00;
+    background: #111;
+    border: 3px ridge #7efd00;
+    box-shadow: 3px 3px 4px #207000;
+    cursor: pointer;
+}
+.generate-random:hover { color: #111; background: #7efd00; }
+.generate-random:active { transform: translateY(2px); }
+@media (max-width: 600px) { .generate-random { width: 84%; min-height: 48px; } }
