@@ -454,7 +454,7 @@ h2 { font-size: clamp(.65rem, 1.5vw, 1rem); line-height: 1.8; padding: 0 1rem; }
     line-height: 1.5;
 }
 .quick-links-toggle::after {
-    content: "\\f152";
+    content: "\f152";
     display: block;
     padding: 2px;
     color: #111;
