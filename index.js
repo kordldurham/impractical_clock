@@ -95,6 +95,7 @@ const wednesdayFrame = document.getElementById('wednesday-gate-frame');
 const WEDNESDAY_PAGE = 'https://kordldurham.github.io/SparkyArcingPotato/';
 const WEDNESDAY_COMPLETE_KEY = 'wednesday-form-completed';
 let wednesdayGateVisible = false;
+let justCompletedWednesdayForm = false;
 
 function localDayStamp(date = new Date()) {
     const year = date.getFullYear();
@@ -112,7 +113,7 @@ function syncWednesdayGate() {
         // Storage may be disabled; the URL redirect still dismisses the gate.
     }
 
-    const shouldShow = isWednesday && !completedToday;
+    const shouldShow = isWednesday && !completedToday && !justCompletedWednesdayForm;
     if (shouldShow === wednesdayGateVisible) return;
 
     wednesdayGateVisible = shouldShow;
@@ -127,6 +128,7 @@ function syncWednesdayGate() {
 
 const wednesdayParams = new URLSearchParams(window.location.search);
 if (wednesdayParams.get('wednesday') === 'complete') {
+    justCompletedWednesdayForm = true;
     try {
         sessionStorage.setItem(WEDNESDAY_COMPLETE_KEY, localDayStamp());
     } catch (_) { /* Private browsing can block storage. */ }
