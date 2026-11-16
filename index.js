@@ -58,3 +58,31 @@ function randomNumberGenerator(now = new Date(), random = Math.random) {
 
 randomNumberGenerator();
 setInterval(randomNumberGenerator, 100);
+
+/* The quick links float over the clock; they never alter its layout. */
+const quickLinksDrawer = document.getElementById('quick-links-drawer');
+const quickLinksPanel = document.getElementById('quick-links-panel');
+const quickLinksToggle = document.getElementById('quick-links-toggle');
+let quickLinksOpen = false;
+
+function setQuickLinksOpen(open) {
+    quickLinksOpen = open;
+    quickLinksDrawer.classList.toggle('is-open', open);
+    quickLinksToggle.setAttribute('aria-expanded', String(open));
+    quickLinksToggle.setAttribute('aria-label', open ? 'Close quick links' : 'Open quick links');
+    quickLinksPanel.setAttribute('aria-hidden', String(!open));
+    quickLinksPanel.inert = !open;
+}
+
+quickLinksToggle.addEventListener('click', () => setQuickLinksOpen(!quickLinksOpen));
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && quickLinksOpen) {
+        setQuickLinksOpen(false);
+        quickLinksToggle.focus();
+    }
+});
+document.addEventListener('pointerdown', event => {
+    if (quickLinksOpen && !quickLinksDrawer.contains(event.target)) {
+        setQuickLinksOpen(false);
+    }
+});
